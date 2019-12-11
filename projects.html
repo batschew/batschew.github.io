@@ -1,0 +1,79 @@
+<!doctype html>
+<head> 
+<meta charset="utf-8">
+  <title>Evan Batsch - ePortfolio</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+	html {
+		background: #F8F5F0;
+	}
+    .content {
+	margin-left: 10%;
+	margin-right: 10%;
+	}
+	.box {
+		border: 1px solid black;
+		padding: 3%;
+	}
+	.textbox {
+		background: white;
+		border: 1px dashed black;
+		padding: 3%;
+	}
+  </style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Navigation</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Batsch_Evan.pdf">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ikigai.png">Ikigai</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body>
+	<div class="jumbotron">
+		<h1>Project: Installing Linux to hardware</h1>
+		<div class="box">
+			<h2>Outline</h2>
+			<div class="textbox">
+			<p>For this project, I decided to install a Linux operating system distribution to a physical computer. I have set up Linux virtual machines in the past, but prior to this project, I had not installed it to hardware.</p>
+			<p>The distribution that I chose, <b>Pop!_OS</b>, is derived from the popular <b>Ubuntu</b> distribution. It is maintained by a US-based hardware company called <b>System76</b>.</p>
+			<p>Installing Linux to hardware is simple if you plan to overwrite the contents of the disk, but I wanted to preserve Windows 10 on a separate partition so I could boot into either system at my choosing. This setup, termed <b>dual-booting</b>, is significantly more complex.
+			</div>
+			<br />
+			<h2>Process</h2>
+			<div class="textbox">
+			<p>After burning an ISO of Pop!_OS to a flash drive and booting into the installer, I encountered errors with the graphical display. I inferred that these were due to the fact that the hardware I was installing Pop!_OS to was using an NVIDIA graphics card with proprietary drivers. As Linux is a free and open source operating system, it usually does not provide these drivers out of the box.</p>
+			<p>I was able to resolve this problem by entering a text-only command line, from which I was able to download the drivers from the distribution's repositories. After this was completed, the graphical errors were resolved and I was able to resume the installation process.</p>
+			<p>I manually partitioned the disks (an SSD and an HDD) to provide space for the distribution, while preserving the data on the Windows partitions.</p>
+			<p>The image below shows the computer's <b>UEFI boot menu</b>, which is maintained in the device's <b>BIOS</b>. Both Pop!_OS and Windows are available. Selecting either option will cause the system to boot into the chosen OS.</p>
+			<br />
+			<img src="boot.JPG">
+			<br />
+			</div>
+			<br />
+			<h2>Results</h3>
+			<div class="textbox">
+			<p>With the disks partitioned and the drivers successfully installed, I was able to complete the system's installation.</p>
+			<br />
+			<img src="distro.JPG">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

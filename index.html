@@ -1,32 +1,70 @@
-<!doctype html> 
+<!doctype html>
 <head> 
+<meta charset="utf-8">
   <title>Evan Batsch - ePortfolio</title>
   <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+	html {
+		background: #F8F5F0;
+	}
+    .content {
+	margin-left: 10%;
+	margin-right: 10%;
+	}
+	.box {
+		border: 1px solid black;
+		padding: 3%;
+	}
+	.textbox {
+		background: white;
+		border: 1px dashed black;
+		padding: 3%;
+	}
+  </style>
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Navigation</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Resume</a>
+        <a class="nav-link" href="Batsch_Evan.pdf">Resume</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Ikigai</a>
+        <a class="nav-link" href="ikigai.png">Ikigai</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="projects.html">Projects</a>
       </li>
     </ul>
   </div>
 </nav>
-
-<h1>About Me</h1>
+<body>
+	<div class="jumbotron">
+		<h1>About me</h1>
+		<div class="box">
+		<h1>Education</h1>
+		<div class="textbox">
+			<p>My name is Evan Batsch. I am in the third year of the Information Technology undergraduate program at the University of Cincinnati. Within the major, I am focusing on software development.</p>
+			<img src="logo.png">
+		</div>
+		<br /><br /><br />
+		<h3>Technology</h3>
+			<div class="textbox">
+				<p>My primary interest in Information Technology is working with the <b>low-level</b> aspects of programs and operating systems.</p>
+				<br />
+				<p> I have experience writing and debugging programs that require manual memory management and pointer manipulation in <b>C++</b>, including with common graphics APIs such as <b>OpenGL</b> and <b>Direct3D</b>.</p>
+				<br />
+				<p>I am familiar with the internal workings of operating systems such as <b>Windows</b>, including up to <b>Windows 10</b>, and the <b>Linux kernel</b>.</p>
+				<img src="logo2.png">
+			</div>
+		</div>
+	</div>
+</body>
 </html>
